@@ -1,0 +1,224 @@
+@font-face {
+  font-family: sans;
+  src: url(/assest/font/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: sans;
+  background-image: linear-gradient(#636363, rgb(22, 22, 22));
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+main {
+  border: #fff solid 1px;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  border-radius: 50%;
+  justify-self: center;
+  margin: 40px 0 10px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 40px;
+  color: #fff;
+}
+
+header ul {
+  color: #fff;
+  font-weight: 400;
+  list-style: none;
+  text-align: left;
+  margin: auto;
+}
+
+header li {
+  font-size: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header li svg {
+  width: 25px;
+  margin: 5px;
+}
+
+a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+}
+
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #fff;
+  border-radius: 0.5rem;
+  margin: 1rem 2rem;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  overflow: hidden;
+}
+
+.acordeon:hover {
+  background-color: #1fa1aa;
+  border-color: #1fa1aa;
+  transition: 500ms;
+}
+
+.acordeon.open {
+  background-color: #1fa1aa;
+  border-color: #1fa1aa;
+}
+
+.acordeon.open:hover {
+  background-color: #1fa1aa;
+  border-color: #1fa1aa;
+  transition: 500ms;
+}
+
+.acordeon .content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.acordeon.open .content {
+  max-height: 1000px;
+  opacity: 1;
+}
+.acordeo.open .content li {
+  margin: 5px;
+}
+
+.botao {
+  background-color: transparent;
+  height: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.acordeo.open .botao {
+  background-color: transparent;
+  height: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.botao img {
+  width: 20px;
+}
+
+.acordeon.open img {
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+.skills,
+.skill {
+  margin: 20px;
+  color: #fff;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.skills svg {
+  width: 80px;
+  margin: 10px;
+}
+.skill li {
+  margin: 10px;
+}
+
+.content li {
+  margin: 5px;
+  color: #fff;
+}
+
+.content svg {
+  height: 50px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.idioma {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main {
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    min-width: 800px;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .skills ul {
+    justify-content: space-around;
+  }
+
+  .idioma {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

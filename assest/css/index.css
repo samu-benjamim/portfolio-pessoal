@@ -1,6 +1,6 @@
 @font-face {
   font-family: sans;
-  src: url(assest/font/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf);
+  src: url(/./assest/font/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf);
 }
 
 body {
@@ -13,6 +13,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
+}
+
+h3,
+h4 {
+  margin: 3px;
+  padding: 3px;
 }
 
 main {
